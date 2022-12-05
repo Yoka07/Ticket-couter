@@ -1,16 +1,6 @@
 
-//initIAL THE COUNT AS 0
-//LISTEN  FOR CLICKS ON THE INCREMENT BUTTON
-//
-/*
-
-function increment() {
-    console.log("The button was clicked")
-}
-
-*/ 
-let counter =" Movie Ticket Counter"
-let movieTicket = document.getElementById("welcome-el")
+let counter = " Movie Ticket Booking"
+let movieTicket = document.getElementById("booking-el")
 movieTicket.innerHTML = counter
 let userName = document.getElementById("ticketUser")
 let userClick = document.getElementById("submit")
@@ -25,31 +15,29 @@ function userfun() {
 let bookedDate = new Date()
 document.getElementById("bookedDate").innerHTML = bookedDate
 
-
+// https://scrimba.com/learn/learnjavascript/welcome-to-the-course-c87pv3hK
 //camelCase
 let count = 0;
 let countEl = document.getElementById("count-el")
 console.log("countEl")
 
 let saveEl = document.getElementById("save-el")
-saveEl.innerHTML = "Previous Entries:\n"
+saveEl.innerHTML = "No. of tickets booked: "
 console.log(saveEl)
 
+function increment() {
 
- 
- function increment() {
-   
-    count += 1
-    countEl.innerHTML = count
-    console.log(count)
- }
+   count += 1
+   countEl.innerHTML = count
+   console.log(count)
+}
 
- function save() {
+function save() {
 
-    let countStr = count + "-"
-    saveEl.textContent += countStr
-    console.log(count)
-    countEl.textContent = 0
-    count = 0
+   let countStr = count + "-"
+   saveEl.textContent += countStr
+   console.log(count)
+   countEl.textContent = 0
+   count = 0
 
- }
+}
